@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>TestNG:  Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 19:23:10 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20024 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ultimateqa.courses.testsuite.LoginPageTest.verifyTheErrorMessage()'><b>verifyTheErrorMessage</b><br>Test class: com.ultimateqa.courses.testsuite.LoginPageTest<br/>
+<a href="#Output-406358588" onClick='toggleBox("Output-406358588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-406358588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-406358588">
+Clicking on Signing Link [[ChromeDriver: chrome on WINDOWS (d19dcfdff7cea9dcd85014c1c1efbced)] -> xpath: //a[@href='/users/sign_in']]<br/>
+Entering abc345@gmail.com User Name [[ChromeDriver: chrome on WINDOWS (d19dcfdff7cea9dcd85014c1c1efbced)] -> id: user[email]]<br/>
+Entering [[ChromeDriver: chrome on WINDOWS (d19dcfdff7cea9dcd85014c1c1efbced)] -> id: user[password]] Password  [[ChromeDriver: chrome on WINDOWS (d19dcfdff7cea9dcd85014c1c1efbced)] -> id: user[password]]<br/>
+Clicking on Signin Button [[ChromeDriver: chrome on WINDOWS (d19dcfdff7cea9dcd85014c1c1efbced)] -> xpath: //button[@type='submit']]<br/>
+Verify Invalid Crendetial Message [[ChromeDriver: chrome on WINDOWS (d19dcfdff7cea9dcd85014c1c1efbced)] -> xpath: //li[contains(text(),'Invalid email or password.')]]<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.ultimateqa.courses.testsuite.LoginPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.ultimateqa.courses.testsuite.LoginPageTest.userShouldNavigateToLoginPageSuccessfully()'><b>userShouldNavigateToLoginPageSuccessfully</b><br>Test class: com.ultimateqa.courses.testsuite.LoginPageTest<br/>
+<a href="#Output-814111376" onClick='toggleBox("Output-814111376", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-814111376" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-814111376">
+Clicking on Signing Link [[ChromeDriver: chrome on WINDOWS (3e7be920a3805c7d997f15a1365a28c9)] -> xpath: //a[@href='/users/sign_in']]<br/>
+Verify Welcome Back Text [[ChromeDriver: chrome on WINDOWS (3e7be920a3805c7d997f15a1365a28c9)] -> xpath: //h2[@class='page__heading']]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.ultimateqa.courses.testsuite.LoginPageTest@1786f9d5</td></tr>
+</table><p>
+</body>
+</html>
